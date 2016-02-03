@@ -12,3 +12,12 @@ Install [Visual Paradigm](http://www.visual-paradigm.com). Resources to learn Vi
 
 Integrate Visual Paradigm with Eclipse. Go to the Window Tab on Visual Paradigm and select 'IDE Integration'. Select Eclipse. If Eclipse is not installed in the opt[linux] directory you may be unable to install the integration. Restart visual paradigm and try again.
 
+Set up an account on [CircleCI](https://circleci.com/)
+
+Go to IBM Bluemix Console and create app.
+
+Clone the directory https://github.com/Cerebri/CoreDevPrototypeEnv.git
+
+Edit the manifest.yml to add the app and host name.
+
+Edit the circle.yml to add your Username and Password. I am trying to figure out how to use secret keys so you dont have to push your username and password.
