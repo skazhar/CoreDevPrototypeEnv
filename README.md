@@ -14,10 +14,15 @@ Integrate Visual Paradigm with Eclipse. Go to the Window Tab on Visual Paradigm 
 
 Set up an account on [CircleCI](https://circleci.com/)
 
-Go to IBM Bluemix Console and create app.
+Go to IBM Bluemix Console and create app. Select .mybluemix.net as domain.
 
 Clone the directory https://github.com/Cerebri/CoreDevPrototypeEnv.git
 
-Edit the manifest.yml to add the app and host name.
+Edit the manifest.yml to add the app and host name. This hostname is the same as what you chose for *.mybluemix.net E.g, haad-java.mybluemix.net haad-java is the app and hostname.
 
-Edit the circle.yml to add your Username and Password. I am trying to figure out how to use secret keys so you dont have to push your username and password.
+If you choose you can rename this directory and PUSH it.
+
+Now in the circleCI account select `ADD PROJECTS` and navigate to the github repo and select it. This forms a tab on your console. Click the repo name and it will direct you to Project Page for your repo. On top right corner select `Project Settings`. In the left panel select `Environment Variables`. Now add two values for USER (ibm Id) and PASSWORD (ibm password). In case you dont like the variable names USER and PASSWORD you can edit the circle.yml file in your directory to reflect the new variable names. After adding variables you can make a change and PUSH again or in the project page select REBUILD.
+
+Once the rebuild is complete you will see "Hello World" on <hostname>.mybluemix.net
+
