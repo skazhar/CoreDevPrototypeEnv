@@ -9,7 +9,7 @@ test:
 test:
   post:
     - cf api https://api.ng.bluemix.net
-    - cf auth s.azhar@cerebri.com vjil1234
+    - cf auth s.azhar@cerebri.com vjil123
     - cf target -o cerebri -s coredev
     - cf a
 deployment:
