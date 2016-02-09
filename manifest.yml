@@ -3,6 +3,6 @@ applications:
   memory: 512M
   instances: 1
   domain: mybluemix.net
-  name: CoreDevPrototypeEnvAzr
-  host: CoreDevPrototypeEnvAzr
+  name: CoreDevPrototypeEnv
+  host: CoreDevPrototypeEnv
   disk_quota: 1024M
